@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "yekan";
+  src: url("../src//assest/font//IRANYekanMedium.ttf");
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "yekan2";
+  src: url("../src//assest/font/IRANYekanLight.ttf");
+
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "yekan";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1131px) {
+  body {
+    overflow-x: auto;
+  }
+}
+
+small {
+  font-family: "yekan2";
+}
+
+.MuiFormLabel-root {
+  font-family: "yekan2" !important;
+  background-color: transparent !important;
+  font-size: 18px !important;
+}
+
